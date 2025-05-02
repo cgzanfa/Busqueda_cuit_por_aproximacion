@@ -26,3 +26,6 @@ los valores en la planilla pueden corresponder a CUIT's completas o a fragmentos
 ✔️ Garantizar la precisión en la selección de la CUIT más adecuada.  
 ✔️ Adaptarse a la estructura de los datos, considerando CUITs completas o parciales.  
 ✔️ Detectar y reportar posibles duplicados.  
+
+
+![](https://github.com/cgzanfa/Busqueda_cuit_por_aproximacion/blob/main/Cuit_finder_1.png)
