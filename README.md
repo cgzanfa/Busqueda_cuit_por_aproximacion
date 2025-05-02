@@ -2,12 +2,13 @@
 
 ## 📝 Introducción
 Este script tiene como finalidad encontrar la CUIT exacta en una planilla de Excel o, en su defecto, determinar la que más se asemeja utilizando un margen de aproximación del 95% al 100%. Dado que
-los valores en la planilla pueden corresponder a CUIT's completas o a fragmentos de ellas, es crucial identificar la coincidencia más precisa.
+los valores en la planilla pueden corresponder a CUIT's completas o a fragmentos de ellas, es crucial identificar la coincidencia más precisa. En el caso de que hubiese un valor preesxistente 
+en la columna CUIT no se realizara ninguna modificacion y se continuara con la fila siguiente. 
 
 ## 🔎 Proceso de Búsqueda
 1. **Búsqueda Exacta (100%)**
    - Se inicia revisando la columna "Clave de referencia 1" de la planilla; en busca de una coincidencia entre el valor de la fila y las CUIT's que tenemos proporcionadas.
-   - Si no se encuentra una coincidencia en la primera columna, se continúa con la siguiente "Clave de refrencia 2") y así sucesivamente.
+   - Si no se encuentra una coincidencia en la primera columna, se continúa con la siguiente ("Clave de refrencia 2") y así sucesivamente.
    - Este enfoque evita el cálculo innecesario de porcentajes de coincidencia en cada instancia, optimizando el rendimiento.
 
 2. **Búsqueda por Aproximación (≥95%)**
